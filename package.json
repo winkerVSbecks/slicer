@@ -1,0 +1,12 @@
+{
+  "name": "slicer",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "esbuild src/script.js --servedir=. --bundle --outfile=out.js",
+    "build": "esbuild src/script.js --bundle --target=chrome58,firefox57,safari11,edge16 --outfile=out.js"
+  },
+  "dependencies": {
+    "esbuild": "^0.10.2",
+    "paper": "^0.12.15"
+  }
+}
